@@ -36,13 +36,13 @@ export default function ExperienceSection({ profileType }: ExperienceSectionProp
                 <p className={`${accent.text} font-medium`}>Luther College</p>
               </div>
               <div className="text-right">
-                <span className="text-gray-400 text-sm">Aug 2023 – May 2027 (Expected)</span>
+                <span className="text-gray-400 text-sm">Aug 2025 – May 2028 (Expected)</span>
                 <p className="text-gray-500 text-sm">Decorah, IA</p>
               </div>
             </div>
             <ul className="space-y-1">
               {[
-                'GPA: 3.7 / 4.0',
+
                 "Dean's List — multiple semesters",
                 "President's Scholarship recipient",
                 'HackKU Hackathon Winner',

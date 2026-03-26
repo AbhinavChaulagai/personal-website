@@ -31,7 +31,7 @@ const profiles = [
     color: 'from-red-600 to-red-900',
     glow: 'rgba(229,9,20,0.5)',
     border: 'border-red-500',
-    description: 'Resume, Timeline, GPA 3.7',
+    description: 'Resume, Timeline',
   },
   {
     id: 'researcher',

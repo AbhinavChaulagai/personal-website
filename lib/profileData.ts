@@ -148,8 +148,8 @@ export const profileConfigs: Record<ProfileType, ProfileData> = {
   },
   recruiter: {
     heroTitle: 'CS & Math Student — Luther College',
-    heroSubtitle: 'GPA 3.7 · Dean\'s List · President\'s Scholarship · HackKU Winner · Open to internships in AI/ML and Software Engineering.',
-    heroBadges: ['GPA 3.7', 'Dean\'s List', 'HackKU Winner', 'President\'s Scholar'],
+    heroSubtitle: 'Dean\'s List · President\'s Scholarship · HackKU Winner · Open to internships in AI/ML and Software Engineering.',
+    heroBadges: ['Dean\'s List', 'HackKU Winner', 'President\'s Scholar'],
     accentColor: 'red',
     accentGlow: 'rgba(229,9,20,0.4)',
     featuredProjects: ['MovieMatch', 'Multimodal Deception Detection', 'Meetpal'],
