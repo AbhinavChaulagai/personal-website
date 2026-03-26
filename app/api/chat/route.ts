@@ -25,7 +25,10 @@ export async function POST(req: NextRequest) {
 
     const response = await fetch(`${CHATBOT_API_URL}/chat`, {
       method: 'POST',
-      headers: { 'Content-Type': 'application/json' },
+      headers: {
+        'Content-Type': 'application/json',
+        'ngrok-skip-browser-warning': 'true',
+      },
       body: JSON.stringify({ messages: validMessages }),
     })
 
