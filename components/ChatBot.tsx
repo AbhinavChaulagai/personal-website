@@ -167,7 +167,7 @@ export default function ChatBot({ onClose }: ChatBotProps) {
           </button>
         </div>
         <p className="text-gray-600 text-xs mt-1.5 text-center">
-          Powered by Claude · Answers represent Abhinav&apos;s background
+          Powered by Phi-4 · Answers represent Abhinav&apos;s background
         </p>
       </div>
     </div>
