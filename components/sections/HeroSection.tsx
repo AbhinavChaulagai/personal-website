@@ -117,11 +117,12 @@ export default function HeroSection({ profileType }: HeroSectionProps) {
           </button>
           {config.showDownloadResume && (
             <a
-              href="/resume.pdf"
-              download
+              href="https://forms.gle/zS41DsgSX1uUdHBt6"
+              target="_blank"
+              rel="noopener noreferrer"
               className="flex items-center gap-2 bg-white text-black font-semibold px-6 py-3 rounded-lg transition-all duration-200 hover:bg-gray-100"
             >
-              📄 Download Resume
+              📄 Request Resume
             </a>
           )}
         </motion.div>
