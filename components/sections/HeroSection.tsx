@@ -12,6 +12,7 @@ const profileEmojis: Record<ProfileType, string> = {
   'software-engineer': '💻',
   recruiter: '📋',
   researcher: '🔬',
+  general: '👋',
 }
 
 export default function HeroSection({ profileType }: HeroSectionProps) {
