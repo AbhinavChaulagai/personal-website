@@ -113,6 +113,28 @@ export default function ProjectsSection({ profileType }: ProjectsSectionProps) {
               )}
             </motion.div>
           ))}
+
+          {/* View All Projects on GitHub */}
+          <motion.a
+            href="https://github.com/AbhinavChaulagai"
+            target="_blank"
+            rel="noopener noreferrer"
+            initial={{ opacity: 0, y: 30 }}
+            animate={isInView ? { opacity: 1, y: 0 } : {}}
+            transition={{ delay: 0.1 + sortedProjects.length * 0.12, duration: 0.5 }}
+            className="group relative bg-[#141414] rounded-xl border border-white/10 hover:border-white/25 transition-all duration-300 overflow-hidden flex flex-col items-center justify-center min-h-[180px] cursor-pointer"
+            whileHover={{
+              boxShadow: `0 0 30px ${config.accentGlow}`,
+              y: -4,
+            }}
+          >
+            <span className="text-4xl mb-3">🐙</span>
+            <p className="text-white font-semibold text-sm mb-1">View All Projects</p>
+            <p className="text-gray-500 text-xs mb-4">github.com/AbhinavChaulagai</p>
+            <span className={`text-xs px-4 py-1.5 rounded-full border ${accent.border} ${accent.text} transition-colors`}>
+              See on GitHub →
+            </span>
+          </motion.a>
         </div>
       </motion.div>
     </section>

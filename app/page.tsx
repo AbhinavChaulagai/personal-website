@@ -42,6 +42,15 @@ const profiles = [
     border: 'border-emerald-500',
     description: 'CS + Math, Algorithms, Publications',
   },
+  {
+    id: 'general',
+    label: 'Just Browsing',
+    emoji: '👋',
+    color: 'from-orange-600 to-orange-900',
+    glow: 'rgba(249,115,22,0.5)',
+    border: 'border-orange-500',
+    description: 'General overview, all projects',
+  },
 ]
 
 export default function Home() {

@@ -9,7 +9,7 @@ import ContactSection from '@/components/sections/ContactSection'
 import { profileConfigs } from '@/lib/profileData'
 import FloatingChat from '@/components/FloatingChat'
 
-const validTypes: ProfileType[] = ['ai-ml', 'software-engineer', 'recruiter', 'researcher']
+const validTypes: ProfileType[] = ['ai-ml', 'software-engineer', 'recruiter', 'researcher', 'general']
 
 interface PageProps {
   params: { type: string }

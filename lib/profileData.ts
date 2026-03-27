@@ -1,4 +1,4 @@
-export type ProfileType = 'ai-ml' | 'software-engineer' | 'recruiter' | 'researcher'
+export type ProfileType = 'ai-ml' | 'software-engineer' | 'recruiter' | 'researcher' | 'general'
 
 export interface Project {
   name: string
@@ -70,6 +70,19 @@ export const projects: Project[] = [
       'Summarizes and extracts key findings from research papers',
       'Conversational Q&A over paper content using LLMs',
       'Designed for researchers and students to accelerate literature review',
+    ],
+  },
+  {
+    name: 'Personal Chatbot',
+    emoji: '🤖',
+    github: 'https://github.com/AbhinavChaulagai/Personal-Chatbot',
+    description: 'A conversational AI chatbot built from scratch — trained on personal data to answer questions about Abhinav\'s background, projects, and interests.',
+    tech: ['Python', 'NLP', 'Machine Learning', 'Flask'],
+    highlights: [
+      'Custom-trained conversational model on personal Q&A data',
+      'Intent recognition and entity extraction pipeline',
+      'REST API backend with Flask for easy integration',
+      'Handles questions about skills, projects, and background',
     ],
   },
   {
@@ -170,6 +183,18 @@ export const profileConfigs: Record<ProfileType, ProfileData> = {
     showDownloadResume: false,
     highlightResearch: true,
   },
+  general: {
+    heroTitle: 'CS & Math Student · Developer · Builder',
+    heroSubtitle: 'Hey! I\'m Abhinav — I build things with code. From full-stack apps to AI models, here\'s a look at what I\'ve been working on.',
+    heroBadges: ['Full-Stack', 'AI / ML', 'Open Source', 'Student'],
+    accentColor: 'orange',
+    accentGlow: 'rgba(249,115,22,0.4)',
+    featuredProjects: ['MovieMatch', 'Personal Chatbot', 'Meetpal', 'Multimodal Deception Detection'],
+    featuredSkillCategories: ['languages', 'frameworks', 'tools', 'libraries'],
+    showTimeline: true,
+    showDownloadResume: false,
+    highlightResearch: false,
+  },
 }
 
 export const accentClasses: Record<string, {
@@ -206,5 +231,12 @@ export const accentClasses: Record<string, {
     border: 'border-emerald-500',
     badge: 'bg-emerald-900/40 text-emerald-300 border border-emerald-700',
     button: 'bg-emerald-600 hover:bg-emerald-700',
+  },
+  orange: {
+    text: 'text-orange-400',
+    bg: 'bg-orange-600',
+    border: 'border-orange-500',
+    badge: 'bg-orange-900/40 text-orange-300 border border-orange-700',
+    button: 'bg-orange-600 hover:bg-orange-700',
   },
 }
