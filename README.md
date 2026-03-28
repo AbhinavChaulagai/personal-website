@@ -1,6 +1,6 @@
 # Abhinav Chaulagai — Portfolio
 
-A Netflix-style personal portfolio website built with Next.js 14, Tailwind CSS, Framer Motion, and the Anthropic Claude API.
+A Netflix-style personal portfolio website built with Next.js 14, Tailwind CSS, Framer Motion
 
 ## Features
 
