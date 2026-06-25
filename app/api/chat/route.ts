@@ -114,6 +114,12 @@ export async function POST(req: NextRequest) {
 
     if (!response.ok) {
       const err = await response.json()
+      if (response.status === 429) {
+        return NextResponse.json(
+          { error: 'Rate limit reached. Please wait a moment and try again.' },
+          { status: 429 }
+        )
+      }
       throw new Error(err.error?.message ?? `Gemini API returned ${response.status}`)
     }
 

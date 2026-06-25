@@ -52,16 +52,19 @@ export default function ChatBot({ onClose }: ChatBotProps) {
         body: JSON.stringify({ messages: apiMessages }),
       })
 
-      if (!res.ok) throw new Error('Request failed')
-
       const data = await res.json()
+      if (!res.ok) {
+        throw new Error(data.error ?? 'Request failed')
+      }
+
       setMessages((prev) => [...prev, { role: 'assistant', content: data.content }])
-    } catch {
+    } catch (err) {
+      const msg = err instanceof Error ? err.message : "Sorry, I couldn't connect right now."
       setMessages((prev) => [
         ...prev,
         {
           role: 'assistant',
-          content: "Sorry, I couldn't connect right now. Please try again in a moment.",
+          content: msg,
         },
       ])
     } finally {
